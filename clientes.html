@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="CSS/stylecliente.css">
+</head>
+<body>
+
+    <header>
+        <h1>Samuel Quispe Resines</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="sobremi.html">Sobre Mi</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+
+        <h2>Testimonios de Clientes</h2>
+
+        <div class="contenedor-testimonios">
+
+            <div class="testimonio">
+                <h3>Juan Pérez</h3>
+                <div class="estrellas">★★★★★</div>
+                <p>"Excelente trabajo, mi web quedó perfecta."</p>
+            </div>
+
+            <div class="testimonio">
+                <h3>María López</h3>
+                <div class="estrellas">★★★★★</div>
+                <p>"Muy profesional y rápido."</p>
+            </div>
+
+            <div class="testimonio">
+                <h3>Carlos Ramírez</h3>
+                <div class="estrellas">★★★★☆</div>
+                <p>"Buen servicio, cumplió con lo prometido."</p>
+            </div>
+
+            <div class="testimonio">
+                <h3>Lucía Torres</h3>
+                <div class="estrellas">★★★★☆</div>
+                <p>"Diseño bonito y funcional."</p>
+            </div>
+
+            <div class="testimonio">
+                <h3>Andrés Quispe</h3>
+                <div class="estrellas">★★★★★</div>
+                <p>"Muy recomendado."</p>
+            </div>
+
+            <div class="testimonio negativo">
+                <h3>Pedro Castillo</h3>
+                <div class="estrellas">★★☆☆☆</div>
+                <p>"Aceptable, pero tardó más de lo esperado."</p>
+            </div>
+
+        </div>
+
+        <!-- BOTÓN -->
+        <section class="dejar-comentario">
+            <h2>¿Quieres dejar tu comentario?</h2>
+            <p>Tu opinión es importante.</p>
+            <button id="btnComentario">Dejar comentario</button>
+
+            <!-- FORMULARIO -->
+            <form class="formulario-comentario">
+                <input type="text" placeholder="Tu nombre" required>
+
+                <select required>
+                    <option value="">Calificación</option>
+                    <option>★★★★★</option>
+                    <option>★★★★☆</option>
+                    <option>★★★☆☆</option>
+                    <option>★★☆☆☆</option>
+                    <option>★☆☆☆☆</option>
+                </select>
+
+                <textarea placeholder="Escribe tu comentario..." required></textarea>
+
+                <button type="submit">Enviar comentario</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- JS -->
+    <script>
+        const boton = document.getElementById('btnComentario');
+        const formulario = document.querySelector('.formulario-comentario');
+
+        boton.addEventListener('click', () => {
+            if (formulario.style.display === 'block') {
+                formulario.style.display = 'none';
+            } else {
+                formulario.style.display = 'block';
+            }
+        });
+    </script>
+
+</body>
+</html>

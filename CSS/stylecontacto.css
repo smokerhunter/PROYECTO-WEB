@@ -1,0 +1,134 @@
+/* VARIABLES */
+:root {
+    --blanco: #ffffff;
+    --oscuro: #0b0f2f;
+    --primario: #1c1f4a;
+    --secundario: #e91f4b;
+    --grisClaro: #f2f4f8;
+}
+
+/* RESET */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* BODY */
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--grisClaro);
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    background-color: var(--blanco);
+    padding: 1rem;
+    font-weight: bold;
+}
+
+/* NAV */
+nav {
+    background-color: var(--secundario);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: var(--blanco);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* TITULOS */
+h2 {
+    color: var(--secundario);
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    color: var(--primario);
+}
+
+/* CORREOS */
+.correos a {
+    color: var(--oscuro);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.correos a:hover {
+    color: var(--secundario);
+}
+
+/* WHATSAPP */
+.whatsapp button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.whatsapp button:hover {
+    transform: scale(1.05);
+}
+
+/* FORMULARIO */
+.formulario form {
+    margin-top: 2rem;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+}
+
+.formulario textarea {
+    height: 120px;
+}
+
+/* BOTON */
+.formulario button {
+    background-color: var(--secundario);
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: var(--primario);
+}

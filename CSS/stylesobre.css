@@ -1,0 +1,152 @@
+/* VARIABLES */
+:root {
+    --blanco: #ffffff;
+    --oscuro: #0b0f2f;
+    --primario: #1c1f4a;
+    --secundario: #e91f4b;
+    --gris: #3c3f58;
+    --grisClaro: #f2f4f8;
+}
+
+/* RESET */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* BODY */
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--grisClaro);
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    background-color: var(--blanco);
+    padding: 1rem;
+    font-weight: bold;
+}
+
+/* NAV */
+nav {
+    background-color: var(--secundario);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENEDOR */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: var(--blanco);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* PERFIL */
+.contenedor-perfil {
+    display: flex;
+    align-items: flex-start; /* 🔥 FIX */
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+/* FOTO */
+.foto {
+    flex: 0 0 auto;
+}
+
+.foto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* INFO */
+.info {
+    flex: 1;
+}
+
+.info h2 {
+    color: var(--primario);
+    margin-bottom: 1rem;
+}
+
+.info p {
+    margin-bottom: .5rem;
+    color: var(--oscuro);
+}
+
+/* SECCIONES */
+section {
+    margin-top: 3rem;
+}
+
+/* TITULOS */
+section h2 {
+    text-align: center;
+    color: var(--secundario);
+    margin-bottom: 2rem;
+}
+
+/* HABILIDADES */
+.habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+.habilidades li {
+    background-color: var(--grisClaro);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+/* ESTUDIOS GRID */
+.contenedor-estudios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+/* CARDS */
+.card {
+    background-color: var(--grisClaro);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+/* OBJETIVO */
+.objetivo p {
+    text-align: center;
+    color: var(--oscuro);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contenedor-perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+}

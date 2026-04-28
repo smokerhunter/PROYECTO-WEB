@@ -1,0 +1,161 @@
+/* VARIABLES */
+:root {
+    --blanco: #ffffff;
+    --oscuro: #0b0f2f;
+    --primario: #1c1f4a;
+    --secundario: #e91f4b;
+    --gris: #3c3f58;
+    --grisClaro: #f2f4f8;
+}
+
+/* RESET */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* BODY */
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--grisClaro);
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    background-color: var(--blanco);
+    padding: 1rem;
+    font-weight: bold;
+}
+
+/* NAV */
+nav {
+    background-color: var(--secundario);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background-color: var(--blanco);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* TITULO */
+main h2 {
+    text-align: center;
+    color: var(--secundario);
+    margin-bottom: 3rem;
+}
+
+/* GRID */
+.contenedor-testimonios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+/* TARJETAS */
+.testimonio {
+    background-color: var(--grisClaro);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+.testimonio:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+}
+
+.testimonio h3 {
+    color: var(--primario);
+    margin-bottom: .5rem;
+}
+
+/* ESTRELLAS */
+.estrellas {
+    color: gold;
+    margin-bottom: 1rem;
+}
+
+/* TEXTO */
+.testimonio p {
+    color: var(--oscuro);
+}
+
+/* NEGATIVO */
+.testimonio.negativo {
+    border: 2px solid var(--secundario);
+    background-color: #ffe5ea;
+}
+
+/* BOTON */
+.dejar-comentario {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.dejar-comentario button {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dejar-comentario button:hover {
+    background-color: var(--primario);
+}
+
+/* FORMULARIO */
+.formulario-comentario {
+    display: none;
+    margin-top: 2rem;
+    background-color: var(--gris);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario-comentario input,
+.formulario-comentario select,
+.formulario-comentario textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+.formulario-comentario button {
+    background-color: var(--secundario);
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: .5rem;
+    cursor: pointer;
+}
