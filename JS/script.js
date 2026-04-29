@@ -34,13 +34,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const btnChat = document.getElementById("btnChat");
-
-    btnChat.addEventListener("click", () => {
-        alert("💬 Contáctame — chat abierto 24/7 😎");
-    });
-
-});
